@@ -1,0 +1,58 @@
+# install with: conda env create -f CS4320env.yml
+name: CS4320
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Compatibility Stack (for osx-arm64)
+  - python
+  - numpy # Entering the NumPy 2 era, avoids potential ABI conflicts
+  - numba # Compatible with NumPy 2.0.* / umap 0.5.*
+  - llvmlite # Paired with numba 0.60.*
+
+  # Basics
+  - ipykernel
+  - ipywidgets
+  - matplotlib
+  - seaborn
+  - scikit-learn      
+  - pandas
+  - requests
+  - jinja2
+
+  # Graphviz: executable + Python bindings
+  - graphviz
+  - python-graphviz
+
+  # Common Course Libraries (all built for NumPy 2 compatibility)
+  - lightgbm
+  - xgboost
+  - shap
+  - openml
+  - scikit-image
+  - imbalanced-learn
+  - mlxtend
+  - yellowbrick
+  - nltk
+  - spacy
+  - spacy-model-en_core_web_md
+  - umap-learn
+  - torchvision
+  - wikipedia
+  - category_encoders
+  - gensim
+  # - scikit-surprise
+
+  # Classic Notebook API (to prevent ConfigManager errors with legacy code)
+  - notebook
+
+  # Others
+  - polars
+  - lifelines
+  - pip
+  - pip:
+      - catboost       # <-- Added here, also to avoid NumPy 2.0 conflicts
+      - mglearn
+      - fancyimpute
+      - spacymoji
+      - psutil
