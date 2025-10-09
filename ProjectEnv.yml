@@ -1,5 +1,5 @@
 # install with: conda env create -f CS4320env.yml
-name: CS4320
+name: ProjectEnv
 channels:
   - conda-forge
   - defaults
