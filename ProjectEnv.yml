@@ -1,16 +1,17 @@
-# install with: conda env create -f CS4320env.yml
+# install with: conda env create --file CS4320env.yml
 name: ProjectEnv
 channels:
   - conda-forge
   - defaults
 dependencies:
   # Core Compatibility Stack (for osx-arm64)
-  - python
+  - python=3.11
   - numpy # Entering the NumPy 2 era, avoids potential ABI conflicts
   - numba # Compatible with NumPy 2.0.* / umap 0.5.*
   - llvmlite # Paired with numba 0.60.*
 
   # Basics
+  - pycaret
   - ipykernel
   - ipywidgets
   - matplotlib

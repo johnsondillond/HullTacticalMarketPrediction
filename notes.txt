@@ -1,0 +1,6 @@
+Use pycaret and prioritize boost machines
+Tune the best ones
+Stack or blend all the models after that
+
+Video on using pycaret from the data professor I met with
+https://www.youtube.com/watch?v=QcCDReclVu8
